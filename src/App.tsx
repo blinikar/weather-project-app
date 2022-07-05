@@ -1,13 +1,10 @@
 import React from "react";
 import "./App.css";
-import {SampleComponent} from "./components/SampleComponent";
+import { Outlet } from "react-router-dom";
 
 function App() {
     return (
-        <div className="App">
-            <SampleComponent text={"This is sample component"} />
-            <h1>Hello world</h1>
-        </div>
+        <Outlet />
     );
 }
 

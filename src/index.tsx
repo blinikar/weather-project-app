@@ -8,6 +8,8 @@ import {
     Route,
     Routes
 } from "react-router-dom";
+import { WelcomePage } from "pages/WelcomePage";
+
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -16,7 +18,9 @@ root.render(
     <React.StrictMode>
         <BrowserRouter>
             <Routes>
-                <Route path={"/"} element={<App />} />
+                <Route path={"/"} element={<App />}>
+                    <Route index element={<WelcomePage />} />
+                </Route>
                 <Route path={"*"} element={<h1>404</h1>} />
             </Routes>
         </BrowserRouter>

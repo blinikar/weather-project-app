@@ -13,7 +13,8 @@
     "linebreak-style": 1,
     "quotes": ["error", "double"],
     "import/no-unresolved": 0,
-    "import/named": 0
+    "import/named": 0,
+    "@typescript-eslint/no-empty-interface": 0
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {
