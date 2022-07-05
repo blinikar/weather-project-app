@@ -1,7 +1,6 @@
 import { SampleComponentProps } from "./SampleComponent";
 import { useState } from "react";
 
-
 export const useSampleComponentLogic = (props: SampleComponentProps) => {
     return {
         useText: (): [
