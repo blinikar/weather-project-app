@@ -11,22 +11,21 @@ import {
 import { WelcomePage } from "pages/WelcomePage";
 import { MapPage } from "pages/MapPage";
 
-
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
 );
 root.render(
-    <React.StrictMode>
-        <BrowserRouter>
-            <Routes>
-                <Route path={"/"} element={<App />}>
-                    <Route index element={<WelcomePage />} />
-                    <Route path={"map"} element={<MapPage />} />
-                </Route>
-                <Route path={"*"} element={<h1>404</h1>} />
-            </Routes>
-        </BrowserRouter>
-    </React.StrictMode>
+    // <React.StrictMode>
+    <BrowserRouter>
+        <Routes>
+            <Route path={"/"} element={<App />}>
+                <Route index element={<WelcomePage />} />
+                <Route path={"map"} element={<MapPage />} />
+            </Route>
+            <Route path={"*"} element={<h1>404</h1>} />
+        </Routes>
+    </BrowserRouter>
+    // </React.StrictMode>
 );
 
 // If you want to start measuring performance in your app, pass a function
