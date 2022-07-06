@@ -9,6 +9,7 @@ import {
     Routes
 } from "react-router-dom";
 import { WelcomePage } from "pages/WelcomePage";
+import { MapPage } from "pages/MapPage";
 
 
 const root = ReactDOM.createRoot(
@@ -20,6 +21,7 @@ root.render(
             <Routes>
                 <Route path={"/"} element={<App />}>
                     <Route index element={<WelcomePage />} />
+                    <Route path={"map"} element={<MapPage />} />
                 </Route>
                 <Route path={"*"} element={<h1>404</h1>} />
             </Routes>
