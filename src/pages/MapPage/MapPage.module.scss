@@ -1,0 +1,16 @@
+.map-page {
+
+  display: flex;
+  flex-direction: column;
+
+  gap: 32px;
+
+  padding: 32px 15%;
+
+  .map {
+    width: 100%;
+    height: 450px;
+
+    background-color: #282c34;
+  }
+}
