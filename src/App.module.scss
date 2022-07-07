@@ -4,11 +4,45 @@ body {
 }
 
 .header {
+  display: flex;
+
   padding-left: 15%;
   padding-right: 15%;
 
   h2 {
     margin-top: 16px;
     margin-bottom: 0;
+  }
+
+  a {
+    text-decoration: none;
+    color: black;
+  }
+
+  nav {
+    margin-left: auto;
+
+    ul {
+      margin-top: 20px;
+      margin-bottom: 0;
+
+      font-size: 20px;
+
+      display: flex;
+      list-style: none;
+      gap: 8px;
+
+      li {
+        cursor: pointer;
+      }
+
+      li:hover {
+        text-decoration: underline;
+      }
+
+      li .active {
+        text-decoration: underline;
+      }
+    }
   }
 }

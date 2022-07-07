@@ -10,6 +10,9 @@ import {
 } from "react-router-dom";
 import { WelcomePage } from "pages/WelcomePage";
 import { MapPage } from "pages/MapPage";
+import { FeedbackPage } from "pages/FeedbackPage";
+import { Provider } from "react-redux";
+import store from "store";
 
 const root = ReactDOM.createRoot(
   document.getElementById("root") as HTMLElement
@@ -17,13 +20,17 @@ const root = ReactDOM.createRoot(
 root.render(
     // <React.StrictMode>
     <BrowserRouter>
-        <Routes>
-            <Route path={"/"} element={<App />}>
-                <Route index element={<WelcomePage />} />
-                <Route path={"map"} element={<MapPage />} />
-            </Route>
-            <Route path={"*"} element={<h1>404</h1>} />
-        </Routes>
+        <Provider store={store}>
+            <Routes>
+                <Route path={"/"} element={<App />}>
+                    <Route index element={<WelcomePage />} />
+                    <Route path={":city"} element={<WelcomePage />} />
+                    <Route path={"map"} element={<MapPage />} />
+                    <Route path={"feedback"} element={<FeedbackPage />} />
+                </Route>
+                <Route path={"*"} element={<h1>404</h1>} />
+            </Routes>
+        </Provider>
     </BrowserRouter>
     // </React.StrictMode>
 );
