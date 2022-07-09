@@ -6,7 +6,7 @@ import { City } from "models/City";
 export interface CurrentConditionsCardProps {
   city: City;
   temp: number;
-  type: "cloudy" | "sunny" | "rainy" | "thunderstorm";
+  type: string;
   date: Date;
 }
 
@@ -18,7 +18,7 @@ export const CurrentConditionsCard: React.FunctionComponent<
     temp, type, date, city,
   } = props;
 
-  const [imageUrl, backgroundUrl] = logic.useBackgroundImageUrl();
+  const [imageUrl, fontColor, starFilter] = logic.useBackgroundImageUrl();
   const [isInStarred, onStarredClick] = logic.useStarredCities();
 
   return (
@@ -26,7 +26,7 @@ export const CurrentConditionsCard: React.FunctionComponent<
       className={styles["current-card"]}
       style={{
         backgroundImage: `url('${imageUrl}')`,
-        color: backgroundUrl,
+        color: fontColor,
       }}
     >
       <div className={styles.conditions}>
@@ -45,6 +45,9 @@ export const CurrentConditionsCard: React.FunctionComponent<
           <h1>{city.name}</h1>
           <button onClick={onStarredClick}>
             <img
+              style={{
+                filter: starFilter,
+              }}
               src={
                 isInStarred
                   ? "star_black_24dp.svg"
