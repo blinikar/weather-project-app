@@ -18,7 +18,7 @@ export const useDayCardLogic = (props: CurrentConditionsCardProps) => ({
       fontColor = "black";
       break;
     case "Rain":
-      backgroundImageUrl = "https://upload.wikimedia.org/wikipedia/commons/6/65/Hard_rain_on_a_roof.jpg";
+      backgroundImageUrl = "https://upload.wikimedia.org/wikipedia/commons/8/8a/Rain_%283735431928%29.jpg";
       fontColor = "black";
       break;
     case "Thunderstorm":
