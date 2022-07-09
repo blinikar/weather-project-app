@@ -62,9 +62,9 @@ export const useCurrentWeather = ():[
         if (isStartsWithNumber(city)) {
             const lat = parseInt(city.slice(0, 5)) / 100;
             const lon = parseInt(city.slice(5, 10)) / 100;
-            fetchUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}`;
+            fetchUrl = `https://api.openweathermap.org/data/2.5/weather?lat=${lat}&lon=${lon}&appid=${API_KEY}&units=metric`;
         } else {
-            fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}`;
+            fetchUrl = `https://api.openweathermap.org/data/2.5/weather?q=${city}&appid=${API_KEY}&units=metric`;
         }
 
         fetch(fetchUrl)

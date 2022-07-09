@@ -5,19 +5,19 @@ import { useDayCardLogic } from "./DayCard.logic";
 export interface DayCardProps {
     temp: number;
     type: "cloudy" | "sunny" | "rainy" | "thunderstorm";
-    iconID : string;
+    icon : string;
     date: Date;
 }
 
 export const DayCard:React.FunctionComponent<DayCardProps> = (props) => {
 
     const logic = useDayCardLogic(props);
-    const { temp, type, iconID, date } = props;
-    const icon: string = "http://openweathermap.org/img/wn/" + String(iconID) + "@2x.png";
+    const { temp, type, icon, date } = props;
+    const iconURL: string = "http://openweathermap.org/img/wn/" + String(icon) + "@2x.png";
 
     return <div className={styles["day-card"]}>
         <h1>{date.getDay()}</h1>
-        <img src = {icon} alt = ""></img>
+        <img src = {iconURL} alt = ""></img>
         <p>{temp}</p>
     </div>
 }

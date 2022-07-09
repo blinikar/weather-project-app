@@ -29,7 +29,7 @@ export const CurrentConditionsCard:React.FunctionComponent<CurrentConditionsCard
     >
         <div className={styles["conditions"]}>
             Current conditions:
-            <h1>{temp}K</h1>
+            <h1>{temp}°С</h1>
             <p>{type}</p>
             <p className={styles["last"]}>{`${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`}</p>
         </div>
