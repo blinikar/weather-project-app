@@ -1,5 +1,5 @@
 body {
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
   min-height: 100vh;
 }
 
@@ -44,5 +44,12 @@ body {
         text-decoration: underline;
       }
     }
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .header {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }

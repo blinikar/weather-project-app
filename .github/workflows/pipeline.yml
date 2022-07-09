@@ -9,8 +9,20 @@ jobs:
       - name: Checkout 🛎️
         uses: actions/checkout@v3
 
+      - name: Install
+        run: |
+          npm ci
+        env:
+          CI: ""
+
       - name: Code Linting
         run: |
           npm run lint
+        env:
+          CI: ""
+
+      - name: Code Testing
+        run: |
+          npm run test
         env:
           CI: ""

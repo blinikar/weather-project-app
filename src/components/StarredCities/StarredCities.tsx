@@ -7,21 +7,26 @@ import { starredCitiesActions } from "store/StarredReducer";
 
 export interface StarredCitiesProps {}
 
-export const StarredCities:React.FunctionComponent<StarredCitiesProps> = (props) => {
+export const StarredCities: React.FunctionComponent<StarredCitiesProps> = (
+  props,
+) => {
+  const logic = useStarredCitiesLogic(props);
 
-    const logic = useStarredCitiesLogic(props);
+  const cities = useAppSelector((state) => state.starredCities);
+  const dispatch = useAppDispatch();
 
-    const cities = useAppSelector((state) => state.starredCities);
-    const dispatch = useAppDispatch();
-
-    return <div className={styles["starred-cities"]}>
-        {
-            cities.map((e, i) => <StarredCity
-                name={e.name}
-                link={e.link}
-                key={i}
-                onRemoveClick={() => {dispatch(starredCitiesActions.toggleCity(e))}}
-            />)
-        }
+  return (
+    <div className={styles["starred-cities"]}>
+      {cities.map((e, i) => (
+        <StarredCity
+          name={e.name}
+          link={e.link}
+          key={i}
+          onRemoveClick={() => {
+            dispatch(starredCitiesActions.toggleCity(e));
+          }}
+        />
+      ))}
     </div>
-}
+  );
+};

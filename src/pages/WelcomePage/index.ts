@@ -1,2 +1,2 @@
 export * from "./WelcomePage";
-export * from "./WelcomePage.logic"
+export * from "./WelcomePage.logic";

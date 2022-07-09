@@ -1,2 +1,2 @@
 export * from "components/CurrentConditionsCard/CurrentConditionsCard";
-export * from "components/CurrentConditionsCard/CurrentConditionsCard.logic"
+export * from "components/CurrentConditionsCard/CurrentConditionsCard.logic";

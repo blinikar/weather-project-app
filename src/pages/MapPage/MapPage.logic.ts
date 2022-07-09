@@ -1,5 +1,3 @@
 import { MapPageProps } from "pages/MapPage/MapPage";
 
-export const useMapPageLogic = (props: MapPageProps) => {
-    return {}
-}
+export const useMapPageLogic = (props: MapPageProps) => ({});

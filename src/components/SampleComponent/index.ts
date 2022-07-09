@@ -1,2 +1,2 @@
 export * from "./SampleComponent";
-export * from "./SampleComponent.logic"
+export * from "./SampleComponent.logic";

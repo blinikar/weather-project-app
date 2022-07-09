@@ -13,7 +13,7 @@
   height: 24px;
   width: fit-content;
 
-  transition: all .3s ease;
+  transition: all 0.3s ease;
 
   cursor: pointer;
 
@@ -27,7 +27,7 @@
 
     font-family: inherit;
 
-    transition: all .1s ease;
+    transition: all 0.1s ease;
   }
 
   .remove {
@@ -46,10 +46,10 @@
 }
 .starred-city:hover {
   box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  background-color: #E2E2E2;
+  background-color: #e2e2e2;
 
   button {
-    background-color: #E2E2E2;
+    background-color: #e2e2e2;
   }
 
   .remove {

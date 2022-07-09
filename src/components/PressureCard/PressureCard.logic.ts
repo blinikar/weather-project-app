@@ -1,5 +1,3 @@
 import { PressureProps } from "./PressureCard";
 
-export const usePressureLogic = (props: PressureProps) => {
-    return {}
-}
+export const usePressureLogic = (props: PressureProps) => ({});

@@ -1,5 +1,3 @@
 import { SearchBarProps } from "components/SearchBar/SearchBar";
 
-export const useSampleComponentLogic = (props: SearchBarProps) => {
-    return {}
-}
+export const useSampleComponentLogic = (props: SearchBarProps) => ({});

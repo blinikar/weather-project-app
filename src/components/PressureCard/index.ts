@@ -1,2 +1,2 @@
 export * from "./PressureCard";
-export * from "./PressureCard.logic"
+export * from "./PressureCard.logic";
