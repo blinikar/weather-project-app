@@ -1,5 +1,4 @@
 .map-page {
-
   display: flex;
   flex-direction: column;
 
@@ -12,5 +11,12 @@
     height: 450px;
 
     background-color: #282c34;
+  }
+}
+
+@media screen and (max-width: 992px) {
+  .map-page {
+    padding-right: 16px;
+    padding-left: 16px;
   }
 }

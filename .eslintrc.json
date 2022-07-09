@@ -4,17 +4,35 @@
     "plugin:import/errors",
     "plugin:react/recommended",
     "plugin:jsx-a11y/recommended",
-    "plugin:@typescript-eslint/recommended"
+    "plugin:@typescript-eslint/recommended",
+    "airbnb",
+    "airbnb/hooks"
   ],
   "plugins": ["react", "import", "jsx-a11y", "@typescript-eslint"],
   "rules": {
     "react/prop-types": 0,
-    "indent": ["error", 4],
+    "indent": ["error", 2],
+    "react/jsx-indent": ["error", 2],
+    "react/jsx-indent-props": ["error", 2],
     "linebreak-style": 1,
     "quotes": ["error", "double"],
+    "no-unused-vars": 0,
+    "react/jsx-filename-extension": 0,
+    "import/extensions": 0,
+    "import/prefer-default-export": 0,
+    "no-restricted-syntax": 0,
+    "default-case": 0,
+    "react/function-component-definition": 0,
     "import/no-unresolved": 0,
     "import/named": 0,
-    "@typescript-eslint/no-empty-interface": 0
+    "react/button-has-type": 0,
+    "react/no-array-index-key": 0,
+    "react/no-unused-prop-types": 0,
+    "@typescript-eslint/no-empty-interface": 0,
+    "react/react-in-jsx-scope": 0,
+    "@typescript-eslint/no-explicit-any": 0,
+    "@typescript-eslint/no-unused-vars": 0,
+    "react-hooks/exhaustive-deps": 0
   },
   "parser": "@typescript-eslint/parser",
   "parserOptions": {

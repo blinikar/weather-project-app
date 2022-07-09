@@ -1,2 +1,2 @@
 export * from "pages/FeedbackPage/FeedbackPage";
-export * from "pages/FeedbackPage/FeedbackPage.logic"
+export * from "pages/FeedbackPage/FeedbackPage.logic";

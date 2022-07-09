@@ -1,2 +1,2 @@
 export * from "./DayCard";
-export * from "./DayCard.logic"
+export * from "./DayCard.logic";
