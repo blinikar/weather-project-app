@@ -33,7 +33,7 @@ export const WelcomePage: React.FunctionComponent<WelcomePageProps> = (
   return (
     <div className={styles["welcome-page"]}>
       <StarredCities />
-      { currentConditions.cod === 200 && city ? (
+      {currentConditions.cod === 200 && city ? (
         <CurrentConditionsCard
           city={city}
           temp={currentConditions.main.temp}
@@ -45,16 +45,15 @@ export const WelcomePage: React.FunctionComponent<WelcomePageProps> = (
       )}
 
       <div className={styles["day-cards"]}>
-        {
-          (forecast.cod === "200") && forecast.list.map((e, i) => (
+        {forecast.cod === "200"
+          && forecast.list.map((e, i) => (
             <DayCard
               key={i}
               temp={e.main.temp}
               dt={e.dt}
               icon={e.weather[0].icon}
             />
-          ))
-        }
+          ))}
       </div>
       <Link to="/feedback">
         <p>Wrong forecast?</p>
