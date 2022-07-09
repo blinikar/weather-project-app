@@ -1,4 +1,28 @@
 .day-card {
   display: flex;
+  width: 20em;
   flex-direction: column;
+
+  border-style: solid;
+  border-radius: 10%;
+  border-width: 0;
+
+  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.24);
+
+  background-color: rgba(255, 225, 225, 0.35);
+}
+.day{
+  margin: 2px;
+  margin-left: 15px;
+}
+.day-temp{
+  text-align: center;
+  margin: 2px;
+}
+.img{
+  align-content: center;
+  width: 4em;
+  height: 4em;
+  margin-left: 15px;
+  margin-right: 15px;
 }

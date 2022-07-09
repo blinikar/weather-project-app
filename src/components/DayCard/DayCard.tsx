@@ -16,8 +16,8 @@ export const DayCard:React.FunctionComponent<DayCardProps> = (props) => {
     const iconURL: string = "http://openweathermap.org/img/wn/" + String(icon) + "@2x.png";
 
     return <div className={styles["day-card"]}>
-        <h1>{date.getDay()}</h1>
-        <img src = {iconURL} alt = ""></img>
-        <p>{temp}</p>
+        <h3 className={styles["day"]}>{date.getDay()}</h3>
+        <img className={styles["img"]} src = {iconURL} alt = ""></img>
+        <p className={styles["day-temp"]}>{temp}°C</p>
     </div>
 }

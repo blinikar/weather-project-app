@@ -42,17 +42,17 @@ export const WelcomePage:React.FunctionComponent<WelcomePageProps> = (props) => 
                 temp={10}
                 type={"cloudy"}
                 icon={"02d"}
-                date={new Date(2022, 1, 1)} />
+                date={new Date(2022, 7, 9)} />
             <DayCard
                 temp={10}
                 type={"cloudy"}
                 icon={"02d"}
-                date={new Date(2022, 1, 1)} />
+                date={new Date(2022, 7, 10)} />
             <DayCard
                 temp={10}
                 type={"cloudy"}
                 icon={"02d"}
-                date={new Date(2022, 1, 1)} />
+                date={new Date(2022, 7, 11)} />
             <DayCard
                 temp={10}
                 type={"cloudy"}

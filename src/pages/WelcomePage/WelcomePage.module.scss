@@ -9,7 +9,7 @@
 
   .day-cards {
     display: flex;
-    gap: 8px;
+    gap: 2.2%;
   }
 
   .skeleton {
@@ -26,10 +26,10 @@
 
   @keyframes skeleton-loading {
     0% {
-      background-color: hsl(200, 20%, 80%);
+      background-color: rgba(255, 225, 225, 0.33);//hsl(200, 20%, 80%);
     }
     100% {
-      background-color: hsl(200, 20%, 95%);
+      background-color: rgba(250, 246, 246, 0.35);//hsl(200, 20%, 95%);
     }
   }
 }
