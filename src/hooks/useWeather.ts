@@ -9,7 +9,7 @@ export interface WeatherData {
     lat: number;
   };
   weather: Array<{
-    description: string;
+    main: string;
   }>;
   main: {
     temp: number;
@@ -28,7 +28,7 @@ interface WeatherAPIData {
     lat: number;
   };
   weather: Array<{
-    description: string;
+    main: string;
   }>;
   main: {
     temp: number;
