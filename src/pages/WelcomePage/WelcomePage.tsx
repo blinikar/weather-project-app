@@ -28,10 +28,6 @@ export const WelcomePage: React.FunctionComponent<WelcomePageProps> = (
     }
   }, [params]);
 
-  useEffect(() => {
-    console.log(currentConditions.cod);
-  }, [currentConditions.cod]);
-
   const city = logic.useCity(currentConditions, params.city);
 
   return (
@@ -40,8 +36,8 @@ export const WelcomePage: React.FunctionComponent<WelcomePageProps> = (
       { currentConditions.cod === 200 && city ? (
         <CurrentConditionsCard
           city={city}
-          temp={(currentConditions as WeatherData).main.temp}
-          type="thunderstorm"
+          temp={currentConditions.main.temp}
+          type={currentConditions.weather[0].main}
           date={new Date()}
         />
       ) : (
