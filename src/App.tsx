@@ -7,7 +7,7 @@ function App() {
     <>
       <div className={styles.header}>
         <Link to="/">
-          <h2 className={styles.heading}>Weather</h2>
+          <h1 className={styles.heading}>Weather</h1>
         </Link>
 
         <nav>

@@ -6,14 +6,14 @@
   align-items: center;
 
   border-radius: 4px;
-  border: 1px solid #d0d0d0;
+  border: 1px solid #fcdbea;
 
   padding: 4px 8px 4px 8px;
 
   height: 24px;
   width: fit-content;
 
-  transition: all 0.3s ease;
+  transition: all .3s ease;
 
   cursor: pointer;
 
@@ -24,17 +24,17 @@
   button {
     border: none;
     cursor: pointer;
-
+    background-color: inherit;//rgb(255, 225, 225);//rgba(255, 225, 225, 0.37);
     font-family: inherit;
 
-    transition: all 0.1s ease;
+    transition: all .3s ease;
   }
 
   .remove {
     border-radius: 16px;
     border-width: 1px;
     border-style: none;
-    border-color: #505050;
+    border-color: #FFFAFAFF;//rgba(255, 225, 225, 0.33);//#505050;
     width: 21px;
     height: 21px;
 
@@ -45,11 +45,12 @@
   }
 }
 .starred-city:hover {
-  box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.25);
-  background-color: #e2e2e2;
+  border: 1px solid #FFF0F5FF;//#ffffff;
+  box-shadow: 0 0 10px 1px rgba(180, 0, 85, 0.15);//rgba(0, 0, 0, 0.15);
+  background-color: #FFF0F5FF;//rgba(255, 225, 225, 0.33);//#E2E2E2;
 
   button {
-    background-color: #e2e2e2;
+    background-color: inherit;//snow;//#E2E2E2;
   }
 
   .remove {
