@@ -1,7 +1,5 @@
-import React, { useRef, useState } from "react";
+import React, { useState } from "react";
 import styles from "pages/MapPage/MapPage.module.scss";
-import { useMapPageLogic } from "pages/MapPage/MapPage.logic";
-import { SearchBar } from "components/SearchBar";
 import {
   YMaps,
   Map,
@@ -19,10 +17,6 @@ export const MapPage: React.FunctionComponent<MapPageProps> = (props) => {
   const [placeCoordinates, setPlaceCoordinates] = useState<number[]>([
     55.753358, 48.743491,
   ]);
-
-  const myGeometry = [55.753358, 48.743491];
-
-  const [data, setData] = useState<string>("");
 
   const navigate = useNavigate();
 
@@ -46,8 +40,6 @@ export const MapPage: React.FunctionComponent<MapPageProps> = (props) => {
 
   return (
     <div className={styles["map-page"]}>
-      {data}
-      <SearchBar placeholder="Find your city" />
       <div className={styles.map}>
         <YMaps
           id="y_map"
