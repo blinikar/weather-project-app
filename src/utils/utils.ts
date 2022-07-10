@@ -12,7 +12,8 @@ export const isStartsWithNumber = (str: string) => str.startsWith("0")
 
 export const getCoordinates = (input: string): { lon: number; lat: number } => {
   const splitInput = input.split(",");
-  const lon = parseInt(splitInput[0], 10) / 100;
-  const lat = parseInt(splitInput[1], 10) / 100;
+  const lat = parseFloat(splitInput[0]);
+  const lon = parseFloat(splitInput[1]);
+
   return { lon, lat };
 };

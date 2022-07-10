@@ -11,12 +11,12 @@ export interface ForecastData {
   list: Array<{
     dt: string;
     main: {
-      temp: number
+      temp: number;
     };
     weather: Array<{
       main: string;
       icon: string;
-    }>
+    }>;
     description: string;
   }>;
 }
@@ -34,12 +34,12 @@ interface ForecastAPIData {
   list: Array<{
     dt: string;
     main: {
-      temp: number
+      temp: number;
     };
     weather: Array<{
       main: string;
       icon: string;
-    }>
+    }>;
     description: string;
   }>;
 }
