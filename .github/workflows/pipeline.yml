@@ -1,7 +1,7 @@
 name: Pipeline
 on: [push]
 jobs:
-  build-and-deploy:
+  build-and-check:
     concurrency: ci-${{ github.ref }}
     runs-on: ubuntu-latest
     environment: github-pages
@@ -11,7 +11,7 @@ jobs:
 
       - name: Install
         run: |
-          npm ci
+          npm ci --force
         env:
           CI: ""
 

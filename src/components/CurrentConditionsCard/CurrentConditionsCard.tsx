@@ -37,7 +37,7 @@ export const CurrentConditionsCard: React.FunctionComponent<
         </h1>
         <p>{type}</p>
         <p className={styles.last}>
-          {`${date.getDay()}.${date.getMonth()}.${date.getFullYear()}`}
+          {`${date.getHours()}:${date.getMinutes()}`}
         </p>
       </div>
       <div className={styles["location-info"]}>
