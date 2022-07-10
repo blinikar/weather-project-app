@@ -34,7 +34,7 @@ it("Current conditions card renders correctly", () => {
     .create(
       <Provider store={store}>
         <CurrentConditionsCard
-          type="sunny"
+          type="Clear"
           temp={10}
           city={new City("Innopolis", "/innopolis")}
           date={new Date(2022, 1, 1)}

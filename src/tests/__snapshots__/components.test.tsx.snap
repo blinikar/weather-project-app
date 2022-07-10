@@ -1,0 +1,316 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Current conditions card renders correctly 1`] = `
+Array [
+  <div
+    className="current-card"
+    style={
+      Object {
+        "backgroundImage": "url('https://upload.wikimedia.org/wikipedia/commons/0/07/Clear_Sky.jpg')",
+        "color": "black",
+      }
+    }
+  >
+    <div
+      className="conditions"
+    >
+      Current conditions:
+      <h1>
+        -264
+        °C
+      </h1>
+      <p>
+        Clear
+      </p>
+      <p
+        className="last"
+      >
+        0:0
+      </p>
+    </div>
+    <div
+      className="location-info"
+    >
+      <span>
+        <h1>
+          Innopolis
+        </h1>
+        <button
+          onClick={[Function]}
+        >
+          <img
+            alt="star"
+            src="star_outline_black_24dp.svg"
+            style={
+              Object {
+                "filter": "",
+              }
+            }
+          />
+        </button>
+      </span>
+    </div>
+  </div>,
+  ")",
+]
+`;
+
+exports[`Feedback page renders correctly 1`] = `
+<div
+  className="feedback-page"
+>
+  <div>
+    <h1>
+      Feedback
+    </h1>
+    <p>
+      Leave your feedback if weather conditions in your city are wrong
+    </p>
+  </div>
+  <form
+    action="#"
+    className="form"
+    onReset={[Function]}
+    onSubmit={[Function]}
+  >
+    <h3>
+      Personal info
+    </h3>
+    <div
+      className="field"
+    >
+      <input
+        name="name"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Your Name*"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        name="email"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Your Email*"
+        type="email"
+        value=""
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        name="city"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Your City*"
+        type="text"
+        value=""
+      />
+    </div>
+    <h3>
+      Current conditions
+    </h3>
+    <div
+      className="field"
+    >
+      <input
+        name="temperature"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Current temperature"
+        type="text"
+        value=""
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <input
+        name="weatherType"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Current weather type"
+        type="text"
+      />
+    </div>
+    <div
+      className="field"
+    >
+      <textarea
+        name="conditions"
+        onBlur={[Function]}
+        onChange={[Function]}
+        placeholder="Additional info"
+        rows={5}
+        type="text"
+      />
+    </div>
+    <button
+      disabled={false}
+      type="submit"
+    >
+      Submit
+    </button>
+  </form>
+</div>
+`;
+
+exports[`Layout page renders correctly 1`] = `
+<div
+  className="header"
+>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    <h1
+      className="heading"
+    >
+      Weather
+    </h1>
+  </a>
+  <nav>
+    <ul>
+      <a
+        href="/"
+        onClick={[Function]}
+      >
+        <li>
+          Home
+        </li>
+      </a>
+      <a
+        href="/map"
+        onClick={[Function]}
+      >
+        <li>
+          Map
+        </li>
+      </a>
+    </ul>
+  </nav>
+</div>
+`;
+
+exports[`Map page renders correctly 1`] = `
+<div
+  className="map-page"
+>
+  <div
+    className="map"
+  />
+</div>
+`;
+
+exports[`No page renders correctly 1`] = `
+<div
+  className="no-page"
+>
+  <h1>
+    This page does not exists :(
+  </h1>
+  <p>
+    We have another pages, there are also beautiful ones
+  </p>
+  <a
+    href="/"
+    onClick={[Function]}
+  >
+    To the Forecast
+  </a>
+</div>
+`;
+
+exports[`Starred cities renders correctly 1`] = `
+<div
+  className="starred-cities"
+>
+  <div
+    className="starred-city"
+  >
+    <button
+      onClick={[Function]}
+    >
+      Innopolis
+    </button>
+    <button
+      className="remove"
+      onClick={[Function]}
+    >
+      <img
+        alt="remove"
+        src="close_FILL0_wght400_GRAD0_opsz48.svg"
+      />
+    </button>
+  </div>
+</div>
+`;
+
+exports[`Starred city renders correctly 1`] = `
+<div
+  className="starred-city"
+>
+  <button
+    onClick={[Function]}
+  >
+    Innopolis
+  </button>
+  <button
+    className="remove"
+    onClick={[Function]}
+  >
+    <img
+      alt="remove"
+      src="close_FILL0_wght400_GRAD0_opsz48.svg"
+    />
+  </button>
+</div>
+`;
+
+exports[`Welcome page renders correctly 1`] = `
+<div
+  className="welcome-page"
+>
+  <div
+    className="starred-cities"
+  >
+    <div
+      className="starred-city"
+    >
+      <button
+        onClick={[Function]}
+      >
+        Innopolis
+      </button>
+      <button
+        className="remove"
+        onClick={[Function]}
+      >
+        <img
+          alt="remove"
+          src="close_FILL0_wght400_GRAD0_opsz48.svg"
+        />
+      </button>
+    </div>
+  </div>
+  <div
+    className="skeleton"
+  />
+  <div
+    className="day-cards"
+  />
+  <a
+    href="/feedback"
+    onClick={[Function]}
+  >
+    <p>
+      Wrong forecast?
+    </p>
+  </a>
+</div>
+`;
