@@ -15,15 +15,15 @@ jobs:
         env:
           CI: ""
 
-      - name: Code Linting
-        run: |
-          npm run lint
-        env:
-          CI: ""
-
       - name: Code Prettier
         run: |
           npm run prettier
+        env:
+          CI: ""
+
+      - name: Code Linting
+        run: |
+          npm run lint:fix
         env:
           CI: ""
 
@@ -42,7 +42,7 @@ jobs:
       - name: Deploy to Netlify
         uses: nwtgck/actions-netlify@v1.2
         with:
-          publish-dir: './build'
+          publish-dir: "./build"
           production-branch: master
           github-token: ${{ secrets.GIT_TOKEN }}
           deploy-message: "Deploy from GitHub Actions"
